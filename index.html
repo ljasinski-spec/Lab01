@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+	body{
+    text-align: center;
+    font-family: Arial;
+    background-color: lightgray;
+    }
+    .przycisk
+    {
+    display: inline-block;
+    background-color: steelblue;
+    padding: 9px 20px;
+    color:black;
+    border: 1px solid black;
+    position: relative;
+    width: 100px;
+    }
+    .lista
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+       	left:0;
+    }
+    .przycisk:hover .lista
+    {
+    	display: block;
+    }
+    .lista .przycisk2
+    {
+    display: block;
+    }
+    
+    .przycisk2
+    {
+    display: inline-block;
+    background-color: lightblue;
+    padding: 9px 20px;
+    color:black;
+    border: 1px solid black;
+    position: relative;
+    width: 100px;
+    }
+    .przycisk2:hover
+    {
+        background-color: gray;
+        color:white;
+    }
+</style>
 <meta charset="UTF-8">
 <title>Lab01</title>
 </head>
 <body>
 
 <h1>Łukasz Jasiński</h1>
-<p>s232634</p></br>
-<p><a href="https://ljasinski-spec.github.io/Lab02_1/">Lab02_1</p>
-<p><a href="https://ljasinski-spec.github.io/Lab02_2/">Lab02_2</p>
+<p>s232634</p><br>
+<div class="przycisk">Lab02
+	<div class="lista">
+    	<a class="przycisk2" href="https://ljasinski-spec.github.io/Lab02_1/">Lab02_1</a>
+        <a class="przycisk2" href="https://ljasinski-spec.github.io/Lab02_2/">Lab02_2</a>
+    </div>
+</div>
+   
+<div class="przycisk">Lab03
+	<div class="lista">
+    	<a class="przycisk2" href="https://ljasinski-spec.github.io/Lab02_1/">Lab03_1</a>
+        <a class="przycisk2" href="https://ljasinski-spec.github.io/Lab02_2/">Lab03_2</a>
+        <a class="przycisk2" href="https://ljasinski-spec.github.io/Lab02_2/">Lab03_2</a>
+        <a class="przycisk2" href="https://ljasinski-spec.github.io/Lab02_2/">Lab03_2</a>
+    </div>
+</div>
+
 </body>
 </html>
